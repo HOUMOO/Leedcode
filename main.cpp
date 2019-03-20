@@ -259,13 +259,25 @@ int main() {
         ne = ne->next;
     }
     */
-    
+
+    /*
     Solution_24 S24;
     int l1[] = {1,2,3,4,5};
     
     ListNode * L1 = NewLink(l1, 5);
     
     ListNode * link = S24.swapPairs(L1);
+
+    while(link != NULL){
+        cout << link->val << endl;
+        link = link->next;
+    }
+     */
+
+    Solution_25 S25;
+    int l1[] = {1,2,3,4,5};
+    ListNode * L = NewLink(l1, 5);
+    ListNode * link = S25.reverseKGroup(L, 1);
 
     while(link != NULL){
         cout << link->val << endl;
