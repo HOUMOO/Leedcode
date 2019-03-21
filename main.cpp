@@ -274,6 +274,7 @@ int main() {
     }
      */
 
+    /*
     Solution_25 S25;
     int l1[] = {1,2,3,4,5};
     ListNode * L = NewLink(l1, 5);
@@ -283,6 +284,25 @@ int main() {
         cout << link->val << endl;
         link = link->next;
     }
+    */
+
+    /*
+    Solution_26 S26;
+    vector<int> nums = {};
+    for(int i=0; i<nums.size(); i++){
+        cout << nums[i] << endl;
+    }
+
+    cout << "\n" << S26.removeDuplicates(nums) << "\n" <<endl;
+
+    for(int i=0; i<nums.size(); i++){
+        cout << nums[i] << endl;
+    }
+    */
+
+    Solution_28 S28;
+
+    cout << S28.strStr("hello", "aabbbbbbb") << endl;
 
     return 0;
 }
