@@ -300,9 +300,21 @@ int main() {
     }
     */
 
+    /*
     Solution_28 S28;
 
     cout << S28.strStr("hello", "aabbbbbbb") << endl;
+    */
+
+    Solution_29 S29;
+//    cout << S29.divide(10,3) << endl;
+//    cout << S29.divide(3,10) << endl;
+//    cout << S29.divide(7,-3) << endl;
+    cout << S29.divide(-2147483648,1) << endl;
+//    cout << S29.divide(0,3) << endl;
+
+//    int a = 2147483648;
+//    cout << a << endl;
 
     return 0;
 }
