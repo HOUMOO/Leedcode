@@ -1,7 +1,7 @@
 #include <algorithm>
 #include "main.h"
 
-ListNode * NewLink(int nums[], int length);
+ListNode *NewLink(int nums[], int length);
 
 int main() {
     /*
@@ -316,21 +316,31 @@ int main() {
 //    int a = 2147483648;
 //    cout << a << endl;
 
+    Solution_30 S30;
+    string s = "a";
+    vector<string> words{"a"};
+
+    vector<int> Answer = S30.findSubstring(s,words);
+
+    for(int i=0; i<Answer.size(); i++){
+        cout << Answer[i] << endl;
+    }
+
     return 0;
 }
 
 
-ListNode * NewLink(int nums[], int length){
+ListNode *NewLink(int nums[], int length) {
     /*
      * 将整数一维数组，转化建立无头的链表
      */
-    ListNode * Head = new ListNode(0);
-    ListNode * tail = Head;
-    ListNode * P = NULL;
+    ListNode *Head = new ListNode(0);
+    ListNode *tail = Head;
+    ListNode *P = NULL;
 
-    for(int i= 0;i<length;i++){
+    for (int i = 0; i < length; i++) {
 //        cout<<i<<endl;
-        ListNode * NewPoint = new ListNode(nums[i]);
+        ListNode *NewPoint = new ListNode(nums[i]);
         tail->next = NewPoint;
         tail = NewPoint;
     }
