@@ -1,7 +1,7 @@
 #include <algorithm>
 #include "main.h"
 
-ListNode * NewLink(int nums[], int length);
+ListNode *NewLink(int nums[], int length);
 
 int main() {
     /*
@@ -300,25 +300,47 @@ int main() {
     }
     */
 
+    /*
     Solution_28 S28;
 
     cout << S28.strStr("hello", "aabbbbbbb") << endl;
+    */
+
+    Solution_29 S29;
+//    cout << S29.divide(10,3) << endl;
+//    cout << S29.divide(3,10) << endl;
+//    cout << S29.divide(7,-3) << endl;
+    cout << S29.divide(-2147483648,1) << endl;
+//    cout << S29.divide(0,3) << endl;
+
+//    int a = 2147483648;
+//    cout << a << endl;
+
+    Solution_30 S30;
+    string s = "a";
+    vector<string> words{"a"};
+
+    vector<int> Answer = S30.findSubstring(s,words);
+
+    for(int i=0; i<Answer.size(); i++){
+        cout << Answer[i] << endl;
+    }
 
     return 0;
 }
 
 
-ListNode * NewLink(int nums[], int length){
+ListNode *NewLink(int nums[], int length) {
     /*
      * 将整数一维数组，转化建立无头的链表
      */
-    ListNode * Head = new ListNode(0);
-    ListNode * tail = Head;
-    ListNode * P = NULL;
+    ListNode *Head = new ListNode(0);
+    ListNode *tail = Head;
+    ListNode *P = NULL;
 
-    for(int i= 0;i<length;i++){
+    for (int i = 0; i < length; i++) {
 //        cout<<i<<endl;
-        ListNode * NewPoint = new ListNode(nums[i]);
+        ListNode *NewPoint = new ListNode(nums[i]);
         tail->next = NewPoint;
         tail = NewPoint;
     }
