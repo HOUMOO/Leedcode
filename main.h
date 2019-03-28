@@ -36,6 +36,7 @@
 #include "Solution_27.h"
 #include "Solution_28.h"
 #include "Solution_30.h"
+#include "Solution_32.h"
 
 using namespace std;
 

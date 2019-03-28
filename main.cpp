@@ -259,10 +259,7 @@ int main() {
         ne = ne->next;
     }
     */
-<<<<<<< HEAD
 
-=======
->>>>>>> houmo_XPS
     /*
     Solution_24 S24;
     int l1[] = {1,2,3,4,5};
@@ -302,7 +299,7 @@ int main() {
         cout << nums[i] << endl;
     }
     */
-
+    /*
     Solution_28 S28;
 
     cout << S28.strStr("hello", "aabbbbbbb") << endl;
@@ -316,6 +313,10 @@ int main() {
     for(int i=0; i<Answer.size(); i++){
         cout << Answer[i] << endl;
     }
+    */
+
+    Solution_32 S32;
+    cout << S32.longestValidParentheses("");
 
     return 0;
 }
