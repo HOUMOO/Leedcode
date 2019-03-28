@@ -32,6 +32,7 @@
 #include "Solution_23.h"
 #include "Solution_24.h"
 #include "Solution_30.h"
+#include "Solution_32.h"
 
 using namespace std;
 
