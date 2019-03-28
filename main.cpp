@@ -273,6 +273,7 @@ int main() {
     }
      */
 
+    /*
     Solution_30 S30;
     string s = "a";
     vector<string> words{"a"};
@@ -282,9 +283,15 @@ int main() {
     for(int i=0; i<Answer.size(); i++){
         cout << Answer[i] << endl;
     }
+    */
+    /*
+    Solution_32 S32;
+    cout << S32.longestValidParentheses("");
+    */
 
     return 0;
 }
+
 
 
 ListNode *NewLink(int nums[], int length) {
