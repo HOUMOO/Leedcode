@@ -317,7 +317,7 @@ int main() {
 //    int a = 2147483648;
 //    cout << a << endl;
     */
-
+/*
     vector<int> nums{1,1};
     vector<int> temp;
 
@@ -328,21 +328,11 @@ int main() {
     for(int i=0; i<nums.size(); i++){
         cout << nums[i] << endl;
     }
+*/
+    Solution_33 S33;
 
-//    temp.assign(nums.end()-4, nums.end());
-//    sort(temp.begin(), temp.end());
-//    reverse(temp.begin(), temp.end());
-//    for(int i=0; i<temp.size(); i++){
-//        cout << temp[i] << endl;
-//    }
-//
-//    temp.assign(nums.end()-6, nums.end()-4);
-//
-//    for(int i=0; i<temp.size(); i++){
-//        cout << temp[i] << endl;
-//    }
-
-//    sort(nums.begin(), nums.end());
+    vector<int> nums = {};
+    cout << S33.search(nums, 5) << endl;
     return 0;
 }
 
