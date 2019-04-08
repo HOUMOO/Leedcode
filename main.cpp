@@ -306,6 +306,7 @@ int main() {
     cout << S28.strStr("hello", "aabbbbbbb") << endl;
     */
 
+    /*
     Solution_29 S29;
 //    cout << S29.divide(10,3) << endl;
 //    cout << S29.divide(3,10) << endl;
@@ -315,7 +316,8 @@ int main() {
 
 //    int a = 2147483648;
 //    cout << a << endl;
-
+    */
+/*
     Solution_30 S30;
     string s = "a";
     vector<string> words{"a"};
@@ -325,7 +327,21 @@ int main() {
     for(int i=0; i<Answer.size(); i++){
         cout << Answer[i] << endl;
     }
+*/
+/*
+    vector<int> nums{1,1};
+    vector<int> temp;
 
+    Solution_31 S31;
+
+    S31.nextPermutation(nums);
+
+    for(int i=0; i<nums.size(); i++){
+        cout << nums[i] << endl;
+    }
+*/
+    Solution_33 S33;
+    cout << S33.search(nums, 5) << endl;
     return 0;
 }
 
