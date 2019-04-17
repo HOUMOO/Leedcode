@@ -306,6 +306,7 @@ int main() {
     cout << S28.strStr("hello", "aabbbbbbb") << endl;
     */
 
+    /*
     Solution_29 S29;
 //    cout << S29.divide(10,3) << endl;
 //    cout << S29.divide(3,10) << endl;
@@ -315,7 +316,8 @@ int main() {
 
 //    int a = 2147483648;
 //    cout << a << endl;
-
+    */
+/*
     Solution_30 S30;
     string s = "a";
     vector<string> words{"a"};
@@ -325,6 +327,51 @@ int main() {
     for(int i=0; i<Answer.size(); i++){
         cout << Answer[i] << endl;
     }
+    */
+
+/*
+    vector<int> nums{1,1};
+    vector<int> temp;
+
+    Solution_31 S31;
+
+    S31.nextPermutation(nums);
+
+    for(int i=0; i<nums.size(); i++){
+        cout << nums[i] << endl;
+    }
+*/
+/*
+ *  Solution_32 S32;
+    cout << S32.longestValidParentheses("");
+    Solution_33 S33;
+    cout << S33.search(nums, 5) << endl;
+
+*/
+    /*
+    Solution_34 S34;
+    vector<int> nums = {};
+    vector<int> answer = S34.searchRange(nums, 9);
+    cout << answer[0] << endl;
+    cout << answer[1] << endl;
+    */
+
+    /*
+    Solution_35 S35;
+    vector<int> nums = {1,3,5,6};
+    cout<<S35.searchInsert(nums, 5)<<endl;
+    */
+
+    Solution_36 S36;
+    vector<vector<char>> board1= {{'.','.','9','7','4','8','.','.','.'},{'7','.','.','.','.','.','.','.','.'},{'.','2','.','1','.','9','.','.','.'},{'.','.','7','.','.','.','2','4','.'},{'.','6','4','.','1','.','5','9','.'},{'.','9','8','.','.','.','3','.','.'},{'.','.','.','8','.','3','.','2','.'},{'.','.','.','.','.','.','.','.','6'},{'.','.','.','2','7','5','9','.','.'}}
+    ;
+
+    vector<vector<char>> board={{'1','.','.','.','7','.','.','3','.'},{'8','3','.','6','.','.','.','.','.'},{'.','.','2','9','.','.','6','.','8'},{'6','.','.','.','.','4','9','.','7'},{'.','9','.','.','.','.','.','5','.'},{'3','.','7','5','.','.','.','.','4'},{'2','.','3','.','.','9','1','.','.'},{'.','.','.','.','.','2','.','4','3'},{'.','4','.','.','8','.','.','.','9'}};
+
+//    cout << S36.isValidSudoku(board) << endl;
+
+    Solution_37 S37;
+    S37.solveSudoku(board);
 
     return 0;
 }
