@@ -35,8 +35,15 @@
 #include "Solution_26.h"
 #include "Solution_27.h"
 #include "Solution_28.h"
+#include "Solution_29.h"
 #include "Solution_30.h"
 #include "Solution_32.h"
+#include "Solution_31.h"
+#include "Solution_33.h"
+#include "Solution_34.h"
+#include "Solution_35.h"
+#include "Solution_36.h"
+#include "Solution_37.h"
 
 using namespace std;
 
