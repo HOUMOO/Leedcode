@@ -329,10 +329,17 @@ int main() {
         cout << nums[i] << endl;
     }
 */
+    /*
     Solution_33 S33;
 
     vector<int> nums = {};
     cout << S33.search(nums, 5) << endl;
+
+     */
+
+    Solution_40 S40;
+    vector<int> nums{10,1,2,7,6,1,5};
+    vector<vector<int>> answer = S40.combinationSum2(nums, 8);
     return 0;
 }
 
