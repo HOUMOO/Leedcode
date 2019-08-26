@@ -340,7 +340,7 @@ int main() {
         cout << nums[i] << endl;
     }
 */
-/*
+    /*
     Solution_33 S33;
     cout << S33.search(nums, 5) << endl;
 
@@ -371,10 +371,107 @@ int main() {
     Solution_37 S37;
     S37.solveSudoku(board);
     */
-
+/*
     Solution_39 S39;
     vector<int> candidates{2,3,5};
     vector<vector<int>> answer = S39.combinationSum(candidates, 8);
+    cout << S33.search(nums, 5) << endl;
+*/
+    /*
+    Solution_40 S40;
+    vector<int> nums{10,1,2,7,6,1,5};
+    vector<vector<int>> answer = S40.combinationSum2(nums, 8);
+     */
+
+    /*
+    Solution_41 S41;
+
+    vector<int> nums{2,2};
+    cout << S41.firstMissingPositive(nums) << endl;
+    */
+
+    /*
+    Solution_42 S42;
+    vector<int> height{6,8,5,0,0,6,5};
+
+    cout << S42.trap(height) << endl;
+    */
+    /*
+    Solution_10 S10;
+    string s1 = "aa";
+    string p = "a*";
+
+    if(S10.isMatch(s1, p))cout << "true" << endl;
+    else cout << "false" << endl;
+    */
+
+    /*
+    Solution_44_faster S44;
+////    string s1 = "babbbbaabababaabbababaababaabbaabababbaaababbababaaaaaabbabaaaabababbabbababbbaaaababbbabbbbbbbbbbaabbb";
+////    string p = "b**bb**a**bba*b**a*bbb**aba***babbb*aa****aabb*bbb***a";
+    string s1 = "aabaab";
+    string p = "***b";
+
+    if(S44.isMatch(s1,p))cout << "true" << endl;
+    else cout << "false" << endl;
+    */
+    /*
+    Solution_45_faster S45;
+    vector<int> nums = {1,1,3,1,1};
+    cout << S45.jump(nums) << endl;
+
+    Solution_46 S46;
+    vector<int> nums = {1,2,3,3};
+
+    vector<vector<int>> Box = S46.permute(nums);
+
+
+    vector<int> nums = {1,1};
+
+    Solution_48 S48;
+    vector<vector<int>> matrix1{
+            {1,2,3},
+            {4,5,6},
+            {7,8,9}
+    };
+    vector<vector<int>> matrix2{
+            {5,1,9,11},
+            {2,4,8,10},
+            {13,3,6,7},
+            {15,14,12,16}
+    };
+
+
+    S48.rotate(matrix1);
+    */
+    /*
+    Solution_49 S49;
+    vector<string> strs = {"eat", "tea", "tan", "ate", "nat", "bat"};
+    vector<vector<string>> result;
+    result = S49.groupAnagrams(strs);
+
+
+    Solution_120 S120;
+    S120.run();
+
+
+    Solution_53 S53;
+    S53.run();
+
+
+    Solution_131 S131;
+    S131.run();
+
+
+    Solution_132 S132;
+    S132.run();
+
+    Solution_62 S62;
+    S62.run();
+         */
+
+    Solution_28 S28;
+    S28.run();
 
     return 0;
 }
