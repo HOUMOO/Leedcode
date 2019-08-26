@@ -3,6 +3,10 @@
 
 ListNode *NewLink(int nums[], int length);
 
+short comp(vector<float> gift1, vector<float> gift2){
+    return gift1[2] > gift2[2];
+}
+
 int main() {
     /*
     Solution1 S1;
@@ -373,8 +377,107 @@ int main() {
     Solution_37 S37;
     S37.solveSudoku(board);
 
+    /*
+    Solution_43 S43;
+
+    string s1 = "19";
+    string s2 = "11";
+
+    cout << S43.multiply(s1, s2) << endl;
+    */
+
+    /*
+    Solution_44_faster S44;
+
+//    string s = "babbbbaabababaabbababaababaabbaabababbaaababbababaaaaaabbabaaaabababbabbababbbaaaababbbabbbbbbbbbbaabbb";
+//    string p = "b**bb**a**bba*b**a*bbb**aba***babbb*aa****aabb*bbb***a";
+
+    string s = "acdcb";
+    string p = "a*c?b";
+
+    if(S44.isMatch(s,p)) cout << "true" << endl;
+    else cout << "false" << endl;
+    */
+
+
+/*
+    int n = 0;
+
+//    cin >> n;
+    vector<int> matesUs = {1,2,3,4,5,6,7,8,9};
+    vector<int> matesOther = {1,2,3,4,5,6,7,8,9};
+    n = matesOther.size();
+//    for(int i=0; i<n; i++){
+//        int speed = 0;
+//        scanf("%d",&speed);
+//        matesUs.push_back(speed);
+//    }
+//
+//    for(int i=0; i<n; i++){
+//        int speed = 0;
+//        scanf("%d",&speed);
+//        matesOther.push_back(speed);
+//    }
+
+    sort(matesUs.begin(), matesUs.end(),greater<int>());
+    sort(matesOther.begin(), matesOther.end(),greater<int>());
+
+    int count = 0;
+    int countEqu = 0;
+    int indexUs = 0;
+    for(int i=0; i<n; i++){
+        if(matesUs[indexUs] > matesOther[i]){
+            count ++;
+            indexUs++;
+            if(indexUs > n-1){
+                break;
+            }
+        }else if(matesUs[indexUs] == matesOther[i]){
+            countEqu ++;
+            indexUs++;
+            if(indexUs > n-1){
+                break;
+            }
+        }
+    }
+
+    if(countEqu < 3){
+        cout << 2*(count) + countEqu - n << endl;
+    }else{
+        cout << 2*(count + countEqu) - 2 - n << endl;
+    }
+
+*/
+
+    int n = 0;
+    int m = 0;
+    cin >> n >> m;
+    vector<vector<float>> gift;
+
+    for(int i=0; i<m; i++){
+        int a;
+        int b;
+        cin >> a >> b;
+        float p = float(b) / a;
+        vector<float> agift = {float(a),float(b),p};
+
+        gift.push_back(agift);
+    }
+    sort(gift.begin(), gift.end(), comp);
+
+    float favo = 0;
+    for(int i=0; i<gift.size(); i++){
+        if(n>=gift[i][0]){
+            favo += gift[i][1];
+            n -= int(gift[i][0]);
+        }
+    }
+
+    cout << int(favo) << endl;
+
     return 0;
 }
+
 
 
 ListNode *NewLink(int nums[], int length) {
