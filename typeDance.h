@@ -5,6 +5,9 @@
 #ifndef LEEDCODE_TYPEDANCE_H
 #define LEEDCODE_TYPEDANCE_H
 
+#include <iostream>
+
+using namespace std;
 
 class typeDance {
 

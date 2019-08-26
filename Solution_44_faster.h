@@ -10,7 +10,7 @@
 
 using namespace std;
 
-class Solution_44 {
+class Solution_44_faster {
 public:
     bool isMatch(string s, string p);
 };

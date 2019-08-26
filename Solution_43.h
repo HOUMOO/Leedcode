@@ -5,9 +5,16 @@
 #ifndef LEEDCODE_SOLUTION_43_H
 #define LEEDCODE_SOLUTION_43_H
 
+#include <iostream>
+#include <vector>
+#include <string>
+#include <algorithm>
+
+using namespace std;
 
 class Solution_43 {
-
+public:
+    string multiply(string num1, string num2);
 };
 
 
