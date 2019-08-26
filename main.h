@@ -34,6 +34,9 @@
 #include "Solution_24.h"
 #include "Solution_30.h"
 #include "Solution_32.h"
+#include "Solution_43.h"
+#include "Solution_44_faster.h"
+#include "typeDance.h"
 
 using namespace std;
 
