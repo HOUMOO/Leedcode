@@ -7,6 +7,7 @@
 #include <vector>
 #include <iostream>
 #include <algorithm>
+#include <string.h>
 
 #include "Solution1.h"
 #include "Solution_2.h"
@@ -38,6 +39,7 @@
 #include "Solution_28.h"
 #include "Solution_29.h"
 #include "Solution_30.h"
+#include "Solution_32.h"
 #include "Solution_31.h"
 #include "Solution_33.h"
 #include "Solution_34.h"
@@ -62,6 +64,9 @@
 #include "Solution_131.h"
 #include "Solution_132.h"
 #include "Solution_62.h"
+#include "Solution_43.h"
+#include "Solution_44_faster.h"
+#include "typeDance.h"
 
 using namespace std;
 
